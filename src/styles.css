@@ -42,14 +42,16 @@ a.info-link {
 }
 
 p.history-desc,
-li.facts {
+li.facts,
+p.desc {
     font-size: 16px;
     font-weight: 300;
     line-height: 2;
     letter-spacing: 2px;
 }
 
-h1.facts-title {
+h1.facts-title,
+h1.contact-title {
     font-size: 100px;
     color: #0e2071e6;
     text-align: center;
@@ -61,7 +63,7 @@ h2.facts-subtitle {
     text-align: center;
 }
 
-ul.facts-list {
+ul {
     list-style: none;
 }
 
@@ -75,6 +77,46 @@ img.images {
     max-width: 400px;
 }
 
+div.contact-items {
+    text-align: center;
+}
+
+h2.contact-subtitle {
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+}
+
+h2.main-subtitle {
+    font-size: 42px;
+    color: #000;
+    text-align: center;
+    line-height: 2;
+}
+
+div.main-content {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 5px solid #FFD700;
+}
+
+p.main-desc {
+    font-size: 36px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+ul.contact-item {
+    margin: 120px auto 0;
+}
+
+li.list-item {
+    margin: 0 auto 120px;
+}
+
+img.list-link {
+    margin: 50px auto;
+}
 
 .mapouter {
     justify-content: center;
