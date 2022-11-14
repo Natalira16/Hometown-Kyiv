@@ -2,10 +2,84 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+a {
+    transition: all 300ms ease-in-out;
+}
+
 .logo {
     max-width: 200px;
 }
 
+.header-container {
+    text-align: center;
+}
+
+
+h1.title {
+    font-size: 100px;
+    color: #0e2071e6;
+}
+
+h2.subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+a.button,
+a.info-link {
+    text-decoration: none;
+    color: rgb(21, 66, 150);
+}
+
 .carousel-item {
     justify-content: center;
+}
+
+.carousel-item img {
+    border-radius: 8px;
+}
+
+p.history-desc,
+li.facts {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+h1.facts-title {
+    font-size: 100px;
+    color: #0e2071e6;
+    text-align: center;
+}
+
+h2.facts-subtitle {
+    font-size: 50px;
+    color: #0e2071e6;
+    text-align: center;
+}
+
+ul.facts-list {
+    list-style: none;
+}
+
+li.facts:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+img.images {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+
+.mapouter {
+    justify-content: center;
+}
+
+.footer {
+    font-size: 12px;
 }
