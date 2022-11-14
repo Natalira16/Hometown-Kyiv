@@ -44,6 +44,8 @@
         </nav>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-4 m-3 p-0" style="max-width: 300px;">
@@ -103,4 +105,24 @@
         </nav>
     </div>
 </body>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>

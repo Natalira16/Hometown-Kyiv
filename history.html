@@ -43,6 +43,9 @@
             </div>
         </nav>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
     <div class="container header-container mb-5">
         <h1 class="title mt-5 mb-5">History</h1>
         <h2 class="subtitle mt-3 mb-3">The city's name is said to derive from the name of <a href="https://en.wikipedia.org/wiki/Kyi" class="info-link" target="_blank">Kyi</a>, one of its four legendary founders. During its history, Kyiv, one of the oldest cities in Eastern Europe, passed through several stages of prominence and obscurity. The city probably existed as a commercial center as early as the 5th century. A Slavic settlement on the great trade route between Scandinavia and Constantinople, Kyiv was a tributary of the Khazars, until its capture by the Varangians (Vikings) in the mid-9th century. Under Varangian rule, the city became a capital of <a href="https://en.wikipedia.org/wiki/Kievan_Rus%27" class="info-link" target="_blank">Kievan Rus'</a>, the first East Slavic state. Completely destroyed during the Mongol invasions in 1240, the city lost most of its influence for the centuries to come.
@@ -110,4 +113,24 @@
         </nav>
     </div>
 </body>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>
