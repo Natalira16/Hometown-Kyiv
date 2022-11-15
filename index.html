@@ -15,163 +15,205 @@
 
     <style>
         body {
-    font-family: 'Merriweather', serif;
-}
+            font-family: 'Merriweather', serif;
+        }
 
 
-a {
-    transition: all 300ms ease-in-out;
-}
+        a {
+            transition: all 300ms ease-in-out;
+        }
 
-.logo {
-    max-width: 200px;
-}
+        .logo {
+            max-width: 200px;
+        }
 
-.header-container {
-    text-align: center;
-}
+        .header-container {
+            text-align: center;
+        }
 
-a.nav-link {
-    font-size: 18px;
-}
+        a.nav-link {
+            font-size: 18px;
+        }
 
-h1.title {
-    font-size: 100px;
-    color: #0e2071e6;
-}
+        h1.title {
+            font-size: 100px;
+            color: #0e2071e6;
+        }
 
-h2.subtitle {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 2;
-    letter-spacing: 2px;
-}
+        h2.subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 2;
+            letter-spacing: 2px;
+        }
 
-a.button,
-a.info-link {
-    text-decoration: none;
-    color: rgb(21, 66, 150);
-}
+        a.button,
+        a.info-link {
+            text-decoration: none;
+            color: rgb(21, 66, 150);
+        }
 
-.carousel-item {
-    justify-content: center;
-}
+        .carousel-item {
+            justify-content: center;
+        }
 
-.carousel-item img {
-    border-radius: 8px;
-}
+        .carousel-item img {
+            border-radius: 8px;
+        }
 
-p.history-desc,
-li.facts,
-p.desc {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 2;
-    letter-spacing: 2px;
-}
+        p.history-desc,
+        li.facts,
+        p.desc {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2;
+            letter-spacing: 2px;
+        }
 
-h1.facts-title,
-h1.contact-title {
-    font-size: 100px;
-    color: #0e2071e6;
-    text-align: center;
-}
+        h1.facts-title,
+        h1.contact-title,
+        h1.food-title {
+            font-size: 100px;
+            color: #0e2071e6;
+            text-align: center;
+        }
 
-h2.facts-subtitle {
-    font-size: 50px;
-    color: #0e2071e6;
-    text-align: center;
-}
+        h2.facts-subtitle {
+            font-size: 50px;
+            color: #0e2071e6;
+            text-align: center;
+        }
 
-ul {
-    list-style: none;
-}
+        ul {
+            list-style: none;
+        }
 
-li.facts:not(:last-child) {
-    margin-bottom: 20px;
-}
+        li.facts:not(:last-child) {
+            margin-bottom: 20px;
+        }
 
-img.images {
-    display: block;
-    margin: 20px auto;
-    max-width: 400px;
-}
+        img.images {
+            display: block;
+            margin: 20px auto;
+            max-width: 400px;
+        }
 
-div.contact-items {
-    text-align: center;
-}
+        div.contact-items {
+            text-align: center;
+        }
 
-h2.contact-subtitle {
-    font-size: 36px;
-    color: #000;
-    text-align: center;
-}
+        h2.contact-subtitle {
+            font-size: 36px;
+            color: #000;
+            text-align: center;
+        }
 
-h2.main-subtitle {
-    font-size: 42px;
-    color: #000;
-    text-align: center;
-    line-height: 2;
-}
+        h2.main-subtitle {
+            font-size: 42px;
+            color: #000;
+            text-align: center;
+            line-height: 2;
+        }
 
-div.main-content {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 5px solid #FFD700;
-}
+        div.main-content {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 5px solid #FFD700;
+        }
 
-p.main-desc {
-    font-size: 36px;
-    line-height: 2;
-    letter-spacing: 2px;
-}
+        div.main-desc {
+            margin-right: 48px;
+        }
 
-ul.contact-item {
-    margin: 120px auto 0;
-}
+        p.donate-desc {
+            font-size: 36px;
+            line-height: 2;
+            letter-spacing: 2px;
+        }
 
-li.list-item {
-    margin: 0 auto 120px;
-}
+        ul.contact-item {
+            margin: 120px auto 0;
+        }
 
-a.contact-link {
-    max-width: 400px;
-}
+        li.list-item {
+            margin: 0 auto 120px;
+        }
 
-img.list-link {
-    margin: 50px auto;
-}
+        a.contact-link {
+            max-width: 400px;
+        }
 
-.mapouter {
-    justify-content: center;
-}
+        img.list-link {
+            margin: 50px auto;
+        }
 
-.footer {
-    font-size: 12px;
-}
+        .mapouter {
+            justify-content: center;
+        }
 
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 28px;
-    border: none;
-    outline: none;
-    background-color: rgb(179, 207, 255);
-    color: white;
-    cursor: pointer;
-    padding: 7px 15px 1px;
-    border-radius: 4px;
-}
+        .footer {
+            font-size: 12px;
+        }
 
-#myBtn:hover {
-    background-color: rgb(122, 171, 255);
-}
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 28px;
+            border: none;
+            outline: none;
+            background-color: rgb(179, 207, 255);
+            color: white;
+            cursor: pointer;
+            padding: 7px 15px 1px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: rgb(122, 171, 255);
+        }
+
+        @media (max-width:1199.999px) {
+            h1.facts-title, h1.contact-title, h1.title, h1.food-title {
+                font-size: 78px;
+            }
+        }
+
+        @media (max-width:991.999px) {
+            h1.facts-title, h1.contact-title, h1.title, h1.food-title {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width:575.999px) {
+            h1.facts-title, h1.contact-title, h1.title, h1.food-title {
+                font-size: 48px;
+            }
+
+            h2.facts-subtitle {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width:767.999px) {
+            div.main-desc {
+                text-align: center;
+                margin: 0;
+            }
+
+            p.carousel-desc {
+                display: none;
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
+    <!-- NAVBAR -->
     <div class="container">
         <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
             <div class="container-fluid">
@@ -191,6 +233,9 @@ img.list-link {
                     <a class="nav-link" title="Interesting facts" href="#facts">Interesting facts</a>
                     </li>
                     <li class="nav-item me-5">
+                    <a class="nav-link" title="Food" href="#food">Food</a>
+                    </li>
+                    <li class="nav-item me-5">
                     <a class="nav-link" title="Photos" href="#photos">Photos</a>
                     </li>
                     <li class="nav-item">
@@ -204,12 +249,15 @@ img.list-link {
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
+    <!-- MAIN HEADER & DESCRIPTION -->
     <div class="container header-container mb-5">
         <h1 class="title mt-5 mb-5">Kyiv</h1>
         <h2 class="subtitle mt-3 mb-3">Kyiv is the capital and most populous city of <a href="https://en.wikipedia.org/wiki/Ukraine" class="info-link" target="_blank">Ukraine</a> 🇺🇦 <br> It is in north-central Ukraine along the Dnipro River. As of 1 January 2021, its population was 2,962,180, making Kyiv the seventh-most populous city in Europe. Kyiv is an important industrial, scientific, educational, and cultural center in Eastern Europe. It is home to many high-tech industries, higher education institutions, and historical landmarks. The city has an extensive system of public transport and infrastructure, including the <a href="https://en.wikipedia.org/wiki/Kyiv_Metro" class="info-link" target="_blank">Kyiv Metro</a> ...
         </h2>
         <a class="btn btn-light button mt-3 mb-3" href="https://en.wikipedia.org/wiki/Kyiv" role="button" target="_blank">Learn more</a>
     </div>
+
+    <!-- PHOTO CAROUSEL -->
     <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -223,44 +271,44 @@ img.list-link {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/%D0%9B%D0%B0%D0%B2%D1%80%D0%B0.jpg" class="d-block w-100" alt="Kyiv Pechersk Lavra Monastery">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>Kyiv Pechersk Lavra Monastery</h5>
-                        <p>This UNESCO World Heritage Site is essential for any visit to Kyiv. You have the option to take your time in the Baroque style Kyiv Pechersk Preserve and enigmatic Lavra Caves and more.</p>
+                        <p class="carousel-desc">This UNESCO World Heritage Site is essential for any visit to Kyiv. You have the option to take your time in the Baroque style Kyiv Pechersk Preserve and enigmatic Lavra Caves and more.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D1%83_%D0%94%D1%80%D1%83%D0%B3%D1%96%D0%B9_%D1%81%D0%B2%D1%96%D1%82%D0%BE%D0%B2%D1%96%D0%B9_%D0%B2%D1%96%D0%B9%D0%BD%D1%96.jpg" class="d-block w-100" alt="The Motherland Monument">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>The Motherland Monument</h5>
-                        <p>Is a monumental statue in Kyiv, the capital of Ukraine. The sculpture is a part of the National Museum of the History of Ukraine in the Second World War.</p>
+                        <p class="carousel-desc">Is a monumental statue in Kyiv, the capital of Ukraine. The sculpture is a part of the National Museum of the History of Ukraine in the Second World War.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/%D0%9C%D0%B0%D1%80%D1%96%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B0%D0%BB%D0%B0%D1%86_%D0%B2_%D0%9A%D0%B8%D1%94%D0%B2%D1%96_%28cropped%29.jpg" class="d-block w-100" alt="Mariinskyi Palace">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>Mariinskyi Palace</h5>
-                        <p>The Mariinskyi Palace is the official ceremonial residence of the President of Ukraine. The Elizabethan baroque palace is sited on the right bank of the Dnipro River in Kyiv, Ukraine, adjoining the neo-classical building of the Verkhovna Rada, the Parliament of Ukraine.</p>
+                        <p class="carousel-desc">The Mariinskyi Palace is the official ceremonial residence of the President of Ukraine. The Elizabethan baroque palace is sited on the right bank of the Dnipro River in Kyiv, Ukraine, adjoining the neo-classical building of the Verkhovna Rada, the Parliament of Ukraine.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Andreevsky_Spusk_oldest_streets_Kiev_cityscape_%288260795004%29.jpg" class="d-block w-100" alt="Andriivskyi Descent">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>Andriivskyi Descent</h5>
-                        <p>Andrew's Descent is a historic descent connecting Kyiv's Upper Town neighborhood and the historically commercial Podil neighborhood. The street is a major tourist attraction of the city. In addition, the street is also part of the Kyiv city historic reserve "Ancient Kyiv".</p>
+                        <p class="carousel-desc">Andrew's Descent is a historic descent connecting Kyiv's Upper Town neighborhood and the historically commercial Podil neighborhood. The street is a major tourist attraction of the city. In addition, the street is also part of the Kyiv city historic reserve "Ancient Kyiv".</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/17-07-02-Maidan_Nezalezhnosti_RR74377-PANORAMA.jpg" class="d-block w-100" alt="Maidan Nezalezhnosti">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>Maidan Nezalezhnosti</h5>
-                        <p>"Independence Square" is the central square of Kyiv, the capital city of Ukraine. One of the city's main squares, it is located on Khreshchatyk Street in the Shevchenko District. The square contains the iconic Independence Monument.</p>
+                        <p class="carousel-desc">"Independence Square" is the central square of Kyiv, the capital city of Ukraine. One of the city's main squares, it is located on Khreshchatyk Street in the Shevchenko District. The square contains the iconic Independence Monument.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/%D0%91%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0_%D0%B2%D1%83%D0%BB.%2C_10_DSC_8398.JPG" class="d-block w-100" alt="House with Chimaeras">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-block">
                         <h5>House with Chimaeras</h5>
-                        <p>House with Chimaeras or Horodecki House is an Art Nouveau building located in the historic Lypky neighborhood of Kyiv. Situated across the street from the President of Ukraine's office at No. 10, Bankova Street, the building has been used as a presidential residence for official and diplomatic ceremonies since 2005.</p>
+                        <p class="carousel-desc">House with Chimaeras or Horodecki House is an Art Nouveau building located in the historic Lypky neighborhood of Kyiv. Situated across the street from the President of Ukraine's office at No. 10, Bankova Street, the building has been used as a presidential residence for official and diplomatic ceremonies since 2005.</p>
                     </div>
                 </div>
             </div>
@@ -275,6 +323,7 @@ img.list-link {
         </div>
     </div>
 
+    <!-- HISTORY HEADER -->
     <div class="container header-container mb-5">
         <h1 class="title mt-5 mb-5" id="history">History</h1>
         <h2 class="subtitle mt-3 mb-3">The city's name is said to derive from the name of <a href="https://en.wikipedia.org/wiki/Kyi" class="info-link" target="_blank">Kyi</a>, one of its four legendary founders. During its history, Kyiv, one of the oldest cities in Eastern Europe, passed through several stages of prominence and obscurity. The city probably existed as a commercial center as early as the 5th century. A Slavic settlement on the great trade route between Scandinavia and Constantinople, Kyiv was a tributary of the Khazars, until its capture by the Varangians (Vikings) in the mid-9th century. Under Varangian rule, the city became a capital of <a href="https://en.wikipedia.org/wiki/Kievan_Rus%27" class="info-link" target="_blank">Kievan Rus'</a>, the first East Slavic state. Completely destroyed during the Mongol invasions in 1240, the city lost most of its influence for the centuries to come.
@@ -282,9 +331,10 @@ img.list-link {
         <a class="btn btn-light button mt-3 mb-3" href="https://en.wikipedia.org/wiki/Kyiv" role="button" target="_blank">Learn more</a>
     </div>
 
+    <!-- FLAG & COAT & LOGO -->
     <div class="container main-hero">
         <div class="row main-section justify-content-center mb-5 ps-5 pe-5 align-items-center">
-            <div class="col main-descr button me-5">
+            <div class="col main-desc button">
                 <h2 class="mb-3"><a href="https://en.wikipedia.org/wiki/Flag_of_Kyiv" class="info-link" target="_blank">Flag of Kyiv</a></h2>
                 <p class="history-desc">
                     The Flag of Kyiv was approved by the Kyiv City Council on 25 May 1995, at the behest of the then head of the Kyiv City Council of People's Deputies Leonid Kosakovsky. On 27 May 1995, the flag was first raised solemnly above the main entrance to the Kyiv City Council. The flag of 1995 looks like an azure piece of fabric. The patron Saint of Kyiv Archangel Michael who holds a flaming sword in his right hand and an oval shield with a cross on it in his left, is depicted on the flag. The flag panel has a yellow border.
@@ -296,7 +346,7 @@ img.list-link {
         </div>
 
         <div class="row main-section justify-content-center mb-5 ps-5 pe-5 align-items-center">
-            <div class="col main-descr button me-5">
+            <div class="col main-desc button">
                 <h2 class="mb-3"><a href="https://en.wikipedia.org/wiki/Coat_of_arms_of_Kyiv" class="info-link" target="_blank">Coat of arms of Kyiv</a></h2>
                 <p class="history-desc">
                     The coat of arms of Kyiv features the Archangel Michael officially named as "Saint Michael the Archistrategos" (archistrategos, chief-general in the Ancient Greece), wielding a flaming sword and a shield on an azure field. 
@@ -310,7 +360,7 @@ img.list-link {
         </div>
 
         <div class="row main-section justify-content-center mb-5 ps-5 pe-5 align-items-center">
-            <div class="col main-descr button me-5">
+            <div class="col main-desc button">
                 <h2 class="mb-3"><a href="https://en.wikipedia.org/wiki/Flag_of_Kyiv" class="info-link" target="_blank">Brandmark of Kyiv</a></h2>
                 <p class="history-desc">
                     Kyiv has held a contest to select a new logo. After a public appeal, ten entries were selected and put up to an online vote. That is the logo that got the most votes. It features four blobs in different colours, all representing different aspects of the city:
@@ -330,10 +380,12 @@ img.list-link {
         </div>
     </div>
 
+    <!-- GOOGLE MAP -->
     <div class="d-flex justify-content-center">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68777226034!2d30.252513830595202!3d50.40169905327505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sde!4v1668451112901!5m2!1sen!2sde" width="800" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
+    <!-- FACTS -->
     <div class="container">
         <h1 class="facts-title mt-5 mb-5" id="facts">
             TOP 10 Interesting facts about Kyiv
@@ -372,71 +424,7 @@ img.list-link {
         </ol>
     </div>
 
-    <div class="container mt-5 mb-5">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/%D0%9B%D0%B0%D0%B2%D1%80%D0%B0.jpg" class="d-block w-100" alt="Kyiv Pechersk Lavra Monastery">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Kyiv Pechersk Lavra Monastery</h5>
-                        <p>This UNESCO World Heritage Site is essential for any visit to Kyiv. You have the option to take your time in the Baroque style Kyiv Pechersk Preserve and enigmatic Lavra Caves and more.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D1%83_%D0%94%D1%80%D1%83%D0%B3%D1%96%D0%B9_%D1%81%D0%B2%D1%96%D1%82%D0%BE%D0%B2%D1%96%D0%B9_%D0%B2%D1%96%D0%B9%D0%BD%D1%96.jpg" class="d-block w-100" alt="The Motherland Monument">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>The Motherland Monument</h5>
-                        <p>Is a monumental statue in Kyiv, the capital of Ukraine. The sculpture is a part of the National Museum of the History of Ukraine in the Second World War.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/%D0%9C%D0%B0%D1%80%D1%96%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B0%D0%BB%D0%B0%D1%86_%D0%B2_%D0%9A%D0%B8%D1%94%D0%B2%D1%96_%28cropped%29.jpg" class="d-block w-100" alt="Mariinskyi Palace">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Mariinskyi Palace</h5>
-                        <p>The Mariinskyi Palace is the official ceremonial residence of the President of Ukraine. The Elizabethan baroque palace is sited on the right bank of the Dnipro River in Kyiv, Ukraine, adjoining the neo-classical building of the Verkhovna Rada, the Parliament of Ukraine.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Andreevsky_Spusk_oldest_streets_Kiev_cityscape_%288260795004%29.jpg" class="d-block w-100" alt="Andriivskyi Descent">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Andriivskyi Descent</h5>
-                        <p>Andrew's Descent is a historic descent connecting Kyiv's Upper Town neighborhood and the historically commercial Podil neighborhood. The street is a major tourist attraction of the city. In addition, the street is also part of the Kyiv city historic reserve "Ancient Kyiv".</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/17-07-02-Maidan_Nezalezhnosti_RR74377-PANORAMA.jpg" class="d-block w-100" alt="Maidan Nezalezhnosti">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Maidan Nezalezhnosti</h5>
-                        <p>"Independence Square" is the central square of Kyiv, the capital city of Ukraine. One of the city's main squares, it is located on Khreshchatyk Street in the Shevchenko District. The square contains the iconic Independence Monument.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/%D0%91%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0_%D0%B2%D1%83%D0%BB.%2C_10_DSC_8398.JPG" class="d-block w-100" alt="House with Chimaeras">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>House with Chimaeras</h5>
-                        <p>House with Chimaeras or Horodecki House is an Art Nouveau building located in the historic Lypky neighborhood of Kyiv. Situated across the street from the President of Ukraine's office at No. 10, Bankova Street, the building has been used as a presidential residence for official and diplomatic ceremonies since 2005.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
+    <!-- MORE FACTS -->
     <div class="container mt-5 mb-5">
         <h2 class="facts-subtitle mb-5">
             And some more...
@@ -477,6 +465,58 @@ img.list-link {
         </ul>
     </div>
 
+    <!-- FOOD CAROUSEL -->
+    <div class="container mt-5 mb-5">
+        <h1 class="food-title mt-5 mb-5" id="food">Kyiv Food</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://gdb.rferl.org/3C4D2ECD-DF43-41D2-A17A-71914EAD0E50_w1597_n_r1_st_s.jpg" class="d-block w-100" alt="Borsch">
+                    <div class="carousel-caption d-block">
+                        <h5>Kyiv Borsch</h5>
+                        <p class="carousel-desc">Mentions of varieties of this first dish can be found as early as the 17th century. But Kyiv borscht became real and "iconic" during the time of Taras Shevchenko, who repeatedly mentioned it in his Diary. The main features of Kyiv borscht are at least two types of good meat, and bay leaves and black pepper should be added as spices. Dried pears and prunes are the secret ingredient that creates this sophisticated taste.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://harbiyiyorum.com/wp-content/uploads/sosisli-pisi-kyivska-perepichka-kiev-ft.jpg" class="d-block w-100" alt="Kyiv Perepichka">
+                    <div class="carousel-caption d-block">
+                        <h5>Kyiv Perepichka</h5>
+                        <p class="carousel-desc">The first fast food restaurant in the capital, which is considered one of the main culinary calling cards. This is a small fried pie with sausage, which was first prepared by the workers of a local canteen in the 80s. Perepichka is famous not only among students, but also managed to get its own page on Wikipedia! According to the audience, the pastry is a perfect snack that can be eaten on the go. In fact, this is the only place in Kyiv where you will find a window shop - across from the capital's Central Shopping Center. You will see a huge line stretching down the street.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="http://smach.com.ua/wp-content/uploads/img_660.jpg" class="d-block w-100" alt="Kyiv-style Cotlet">
+                    <div class="carousel-caption d-block">
+                        <h5>Kyiv-style Cotlet</h5>
+                        <p class="carousel-desc">How to define a real Kyiv cutlet? This dish has many predecessors. French "marechal" - cutlet in breading, stuffed with truffle or "de-volai" - from chicken breast, into which the bone was inserted. At the beginning of the 20th century, a dish that actually had Kyivan roots spread in the USA - chicken breast was stuffed with butter there. But the first "official" Kyiv cutlet was prepared in 1947. The real one should be made from a whole juicy chicken breast, the breading should be crispy and thin, and the middle should melt in your mouth with a creamy liquid. It is best to taste the patty together with puree.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://smachno.ua/wp-content/uploads/2018/10/18/kievskij-tort.jpg" class="d-block w-100" alt="Kyiv Cake">
+                    <div class="carousel-caption d-block">
+                        <h5>Kyiv Cake</h5>
+                        <p class="carousel-desc">Can I have another piece? This dessert can be eaten all at once without noticing. There is a legend that the Kyiv cake was created as a result of a mistake made by one of the confectioners. It's like he forgot to put the egg whites in the fridge, which caused the cake pans to just stick. The loser employee decided to fix the difficult situation by smearing them with cream. That's how, in 1956, the Kyiv cake appeared for the first time. If this story is to be considered true, then the Kyiv cake is the biggest mistake in the world confectionery In 1973, the recipe improved by confectioners was patented, and hazelnut crumbs were added to the meringue protein cakes and made into chocolate cream.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- PHOTOS -->
     <div class="container" id="photos">
         <div class="row align-items-center justify-content-center">
             <div class="col-4 m-3 p-0" style="max-width: 300px;">
@@ -527,13 +567,14 @@ img.list-link {
         </div>
     </div>
 
+    <!-- CONTACTS -->
     <div class="container contact-items">
         <h1 class="contact-title mt-5 mb-5" id="contact">Contact Kyiv and enjoy the vibes...</h1>
         <div class="main-content">
             <h2 class="main-subtitle mt-3 mb-3">
                 <strong>But firstly we ask YOU to donate for Ukraine 🇺🇦 </strong>
             </h2>
-            <p class="main-desc m-0">
+            <p class="donate-desc m-0">
                 We appreciate everyone's support! 
                 <br>
                 By the link below You can choose the direction of donation (Defence and Demining, Medical Aid or Rebuild Ukraine) and help Ukraine to stay strong and fight for <strong style="color: #01a661;">FREEDOM</strong> 🕊  
@@ -555,7 +596,7 @@ img.list-link {
         </ul>
     </div>
 
-
+    <!-- FOOTER -->
     <div class="mt-5 footer">
         <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
             <p class="m-0 p-3">
