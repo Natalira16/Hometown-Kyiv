@@ -29,10 +29,36 @@
 
         .header-container {
             text-align: center;
+            position: relative;
+        }
+
+        .header-section {
+            position: relative;
+        }
+
+        .header-section:before {
+            content: ' ';
+            justify-content: center;
+            display: block;
+            position: absolute;
+            background-image: url("images/wallpaper.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+
+        li.nav-item:not(:last-child) {
+            margin-right: 48px;
         }
 
         a.nav-link {
             font-size: 18px;
+            color: #13226db5;
         }
 
         h1.title {
@@ -59,6 +85,13 @@
 
         .carousel-item img {
             border-radius: 8px;
+        }
+
+        .carousel-desc {
+            color: #fff;
+            font-weight: 300;
+            line-height: 2;
+            text-shadow: -0.5px 0 rgb(45, 45, 45), 0 0.5px rgb(45, 45, 45), 0.5px 0 rgb(45, 45, 45), 0 -0.5px rgb(45, 45, 45);
         }
 
         p.history-desc,
@@ -186,6 +219,13 @@
             h1.facts-title, h1.contact-title, h1.title, h1.food-title, h1.photo-title {
                 font-size: 78px;
             }
+            a.nav-link {
+                font-size: 14px;
+            }
+
+            li.nav-item:not(:last-child) {
+                margin-right: 38px;
+            }
         }
 
         @media (max-width:991.999px) {
@@ -221,47 +261,51 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/kyiv_logo.png" class="logo" alt="logo" title="Homepage"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item me-5">
-                    <a class="nav-link active" aria-current="page" title="Homepage" href="#index">Homepage</a>
-                    </li>
-                    <li class="nav-item me-5">
-                    <a class="nav-link" title="History" href="#history">History</a>
-                    </li>
-                    <li class="nav-item me-5">
-                    <a class="nav-link" title="Interesting facts" href="#facts">Interesting facts</a>
-                    </li>
-                    <li class="nav-item me-5">
-                    <a class="nav-link" title="Food" href="#food">Food</a>
-                    </li>
-                    <li class="nav-item me-5">
-                    <a class="nav-link" title="Photos" href="#photos">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" title="Find tickets" href="#contact">Contacts</a>
-                    </li>
-                </ul>
+    <div class="header-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/kyiv_logo.png" class="logo" alt="logo" title="Homepage"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-0">
+                        <a class="nav-link active" aria-current="page" title="Homepage" href="#index">Homepage</a>
+                        </li>
+                        <li class="nav-item p-0">
+                        <a class="nav-link" title="History" href="#history">History</a>
+                        </li>
+                        <li class="nav-item p-0">
+                        <a class="nav-link" title="Interesting facts" href="#facts">Interesting facts</a>
+                        </li>
+                        <li class="nav-item p-0">
+                        <a class="nav-link" title="Food" href="#food">Food</a>
+                        </li>
+                        <li class="nav-item p-0">
+                        <a class="nav-link" title="Photos" href="#photos">Photos</a>
+                        </li>
+                        <li class="nav-item p-0">
+                        <a class="nav-link" title="Find tickets" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
     <!-- MAIN HEADER & DESCRIPTION -->
-    <div class="container header-container mb-5">
-        <h1 class="title mt-5 mb-5">Kyiv</h1>
-        <h2 class="subtitle mt-3 mb-3">Kyiv is the capital and most populous city of <a href="https://en.wikipedia.org/wiki/Ukraine" class="info-link" target="_blank">Ukraine</a> 🇺🇦 <br> It is in north-central Ukraine along the Dnipro River. As of 1 January 2021, its population was 2,962,180, making Kyiv the seventh-most populous city in Europe. Kyiv is an important industrial, scientific, educational, and cultural center in Eastern Europe. It is home to many high-tech industries, higher education institutions, and historical landmarks. The city has an extensive system of public transport and infrastructure, including the <a href="https://en.wikipedia.org/wiki/Kyiv_Metro" class="info-link" target="_blank">Kyiv Metro</a> ...
-        </h2>
-        <a class="btn btn-light button mt-3 mb-3" href="https://en.wikipedia.org/wiki/Kyiv" role="button" target="_blank">Learn more</a>
+    
+        <div class="container header-container mb-5">
+            <h1 class="title mt-5 mb-5">Kyiv</h1>
+            <h2 class="subtitle mt-3 mb-3">Kyiv is the capital and most populous city of <a href="https://en.wikipedia.org/wiki/Ukraine" class="info-link" target="_blank">Ukraine</a> 🇺🇦 <br> It is in north-central Ukraine along the Dnipro River. As of 1 January 2021, its population was 2,962,180, making Kyiv the seventh-most populous city in Europe. Kyiv is an important industrial, scientific, educational, and cultural center in Eastern Europe. It is home to many high-tech industries, higher education institutions, and historical landmarks. The city has an extensive system of public transport and infrastructure, including the <a href="https://en.wikipedia.org/wiki/Kyiv_Metro" class="info-link" target="_blank">Kyiv Metro</a> ... <br> Modern Kyiv is a mix of the old (Kyiv preserved about 70 percent of more than 1,000 buildings built during 1907–1914) and the new, seen in everything from the architecture to the stores and to the people themselves. When the capital of the Ukrainian SSR was moved from Kharkiv to Kyiv many new buildings were commissioned to give the city "the gloss and polish of a capital".
+            </h2>
+            <a class="btn btn-outline-primary button mt-3 mb-3 me-5" style="border-color: #0e2071e6;" href="https://en.wikipedia.org/wiki/Kyiv" role="button" target="_blank">Learn more</a>
+            <a class="btn btn-outline-primary button mt-3 mb-3" style="border-color: #0e2071e6;" href="#donation" role="button">Donation</a>
+        </div>
     </div>
 
     <!-- PHOTO CAROUSEL -->
@@ -483,14 +527,14 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-item active">
                     <img src="https://gdb.rferl.org/3C4D2ECD-DF43-41D2-A17A-71914EAD0E50_w1597_n_r1_st_s.jpg" class="d-block w-100" alt="Kyiv Borsch">
                     <div class="carousel-caption d-block">
                         <h5>Kyiv Borsch</h5>
                         <p class="carousel-desc">Mentions of varieties of this first dish can be found as early as the 17th century. But Kyiv borscht became real and "iconic" during the time of Taras Shevchenko, who repeatedly mentioned it in his Diary. The main features of Kyiv borscht are at least two types of good meat, and bay leaves and black pepper should be added as spices. Dried pears and prunes are the secret ingredient that creates this sophisticated taste.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item">
                     <img src="http://smach.com.ua/wp-content/uploads/img_660.jpg" class="d-block w-100" alt="Kyiv-style Cotlet">
                     <div class="carousel-caption d-block">
                         <h5>Kyiv-style Cotlet</h5>
@@ -576,7 +620,7 @@
     </div>
 
     <!-- CONTACTS -->
-    <div class="container contact-items">
+    <div class="container contact-items" id="donation">
         <h1 class="contact-title mt-5 mb-5" id="contact">Contact Kyiv and enjoy the vibes...</h1>
         <div class="main-content">
             <h2 class="main-subtitle mt-3 mb-3">
